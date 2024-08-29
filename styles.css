@@ -1,0 +1,590 @@
+body {
+    background-color: #f0f4f8; /* Light Grayish Blue Background */
+    color: #333333; /* Primary Text: Dark Gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003d34; /* Deep Teal */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px; /* Adjust height as needed */
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: #a0d6b4; /* Light Green */
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.button {
+    background-color: #a0d6b4; /* Light Green */
+    border: none;
+    color: #003d34; /* Deep Teal */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button a {
+    color: #003d34; /* Deep Teal */
+    text-decoration: none;
+    display: block;
+}
+
+.button:hover {
+    background-color: #d0d0d0; /* Gray */
+    color: #003d34; /* Deep Teal */
+}
+
+.accent-background-forest {
+    background-color: #2E8B57; /* Forest Green */
+    padding: 20px;
+    margin: 10px 0;
+    color: #FFFFFF;
+}
+
+.accent-background-sand {
+    background-color: #D2B48C; /* Sand Beige */
+    padding: 20px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #003d34; /* Deep Teal */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #a0d6b4; /* Light Green */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+}
+
+/* About Page Styles */
+
+.about {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark Gray text */
+    padding: 20px;
+}
+
+.intro, .biography, .portfolio-highlights, .personal-touch, .testimonials, .call-to-action {
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #003d34; /* Deep Teal */
+}
+
+.biography, .personal-touch {
+    background-color: #e8f5e9; /* Light Greenish Background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.biography img.portrait {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    float: right;
+    margin-left: 20px;
+}
+
+.portfolio-highlights .gallery-preview {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.gallery-preview img.preview-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.testimonials blockquote {
+    background-color: #f0f4f8; /* Light Grayish Blue */
+    padding: 15px;
+    border-left: 5px solid #003d34; /* Deep Teal */
+    margin: 10px 0;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action .button {
+    background-color: #003d34; /* Deep Teal */
+    color: #ffffff;
+}
+.button {
+    background-color: #a0d6b4; /* Light Green */
+    border: none;
+    color: #003d34; /* Deep Teal */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button a {
+    color: #003d34; /* Deep Teal */
+    text-decoration: none;
+    display: block;
+}
+
+.button:hover {
+    background-color: #d0d0d0; /* Gray */
+    color: #003d34; /* Deep Teal */
+}
+
+.button:hover a {
+    color: #003d34; /* Deep Teal */
+}
+/* Pricing Page Styles */
+
+.pricing {
+    background-color: #f5f5f5; /* Light Gray Background */
+    color: #333333; /* Dark Gray Text */
+    padding: 20px;
+}
+
+.pricing h2 {
+    font-size: 2.5em;
+    color: #003d34; /* Deep Teal */
+}
+
+.pricing p {
+    font-size: 1.1em;
+}
+
+.pricing-options {
+    margin-top: 20px;
+}
+
+.package {
+    background-color: #ffffff; /* White Background */
+    border: 1px solid #dcdcdc; /* Light Gray Border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.package-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #dcdcdc;
+    transition: opacity 0.3s ease;
+}
+
+.package:hover .package-image {
+    opacity: 0.9;
+}
+
+.package h4 {
+    font-size: 1.8em;
+    color: #003d34; /* Deep Teal */
+}
+
+.package ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.package .price {
+    font-size: 1.5em;
+    color: #00796b; /* Teal Green */
+    font-weight: bold;
+}
+
+.additional-info {
+    background-color: #e0f2f1; /* Light Green Background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.call-to-action .button {
+    background-color: #003d34; /* Deep Teal */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Gallery Page Styles */
+
+.gallery {
+    background-color: #f0f4f8; /* Light Gray-Blue Background */
+    color: #333333; /* Dark Gray Text */
+    padding: 20px;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+    color: #003d34; /* Deep Teal */
+}
+
+.gallery-category {
+    margin-bottom: 40px;
+}
+
+.gallery-category h3 {
+    font-size: 2em;
+    color: #003d34; /* Deep Teal */
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 30px); /* Three images per row */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    opacity: 0.8;
+}
+
+/* Modal Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ffdddd;
+}
+
+.upload {
+    background-color: #e0f2f1; /* Light Green Background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.upload form {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.upload select, .upload input[type="file"], .upload button {
+    margin-bottom: 10px;
+}
+
+/* Enquiry Page Styles */
+
+.enquiry {
+    background-color: #f0f4f8; /* Light Gray-Blue Background */
+    color: #333333; /* Dark Gray Text */
+    padding: 20px;
+}
+
+.enquiry h2 {
+    font-size: 2.5em;
+    color: #003d34; /* Deep Teal */
+}
+
+.enquiry p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #003d34; /* Deep Teal Background */
+    color: #ffffff; /* White Text */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content a {
+    color: #FFD700; /* Golden Yellow for Links */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.hero {
+    background: url('images/claudel-rheault-ZVbv1akA-l4-unsplash.jpg') no-repeat center center/cover; /* Hero Image */
+    color: #ffffff;
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+    position: relative;
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+body {
+            background-color: #f0f4f8; /* Light Grayish Blue Background */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #003d34; /* Deep Teal */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 100px; /* Adjust height as needed */
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #a0d6b4; /* Light Green */
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .login-register {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .hero {
+        position: relative;
+        height: 250px; /* Adjust height as needed */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        text-align: center;
+        background: #003d34; /* Deep Teal */
+        }
+
+        .hero img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+        }
+
+        .hero img:nth-child(1) { animation: slide 24s infinite; }
+        .hero img:nth-child(2) { animation: slide 24s infinite 6s; }
+        .hero img:nth-child(3) { animation: slide 24s infinite 12s; }
+        .hero img:nth-child(4) { animation: slide 24s infinite 18s; }
+
+        @keyframes slide {
+        0% { opacity: 0; transform: scale(1.05); }
+        5% { opacity: 1; transform: scale(1); }
+        25% { opacity: 1; transform: scale(1); }
+        30% { opacity: 0; transform: scale(1.05); }
+        100% { opacity: 0; transform: scale(1.05); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 48px;
+            animation: fadeIn 2s ease-out;
+        }
+        .hero p {
+            font-size: 24px;
+            animation: fadeIn 3s ease-out;
+        }
+        .cta {
+            background-color: #a0d6b4; /* Light Green */
+            color: #003d34; /* Deep Teal */
+            text-align: center;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .cta h3 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .cta a {
+            color: #003d34; /* Deep Teal */
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #003d34;
+            transition: all 0.3s ease;
+        }
+        .cta a:hover {
+            color: #a0d6b4; /* Light Green */
+            border-bottom: 2px solid #a0d6b4;
+        }
+        .services, .testimonials {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .services h3, .testimonials h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #003d34; /* Deep Teal */
+        }
+        
+        .services p, .testimonials p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333333; /* Dark Gray */
+            animation: fadeInUp 2s ease-out;
+        }
+        footer {
+            background-color: #003d34; /* Deep Teal */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #a0d6b4; /* Light Green */
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* CSS Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
